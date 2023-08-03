@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+<style>
+    body{
+        margin: 0%;
+    }
+    html{
+        box-sizing: border-box;
+    }
+
+#about{
+padding: 80px 0;
+color: rgb(14, 11, 13);
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.abt-column-1{
+    flex-basis: 35%;
+}
+.abt-column-1 img{
+    border-radius: 20px;
+    width: 100%;
+}
+.abt-column-2{
+    flex-basis: 60%;
+}
+.back-video{
+    position:fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.title{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 40px;
+}
+.title-text{
+    color: rgb(241, 247, 247);
+    font-size: 20px;
+    
+}
+.container :hover .photo{
+    transform: scale(1) rotate(7deg);
+    opacity: 0.3;
+}
+.photo{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  backface-visibility: hidden;
+}
+
+    </style>
+</head>
+<body>
+    <video autoplay loop muted class="back-video">
+        <source src="images/pexels-5.mp4" type="video/mp4">
+    </video>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="abt-column-1">
+                    <img class="photo" src="images/aman-pic2.jpg" alt="aman pic">
+                </div>
+                <div class="abt-column-2">
+                    <h1 class="title">ABOUT ME</h1>
+                    <p class="title-text">I am a computer science student and
+                        developer looking for an opportunity
+                        to work in interesting projects to work
+                        upon, where I can use my skills and
+                        technology to add the value to the organization. I am passionate about creating and working on projects that set
+                        standards for others. I don’t hesitate
+                        to try out new technologies and that
+                        makes me flexible enough to work on
+                        any new kind of project with new technology</p>
+                        
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
